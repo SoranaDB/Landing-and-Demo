@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#103e35"><title>PackPal Demo | Loca Ltd.</title><style>
+:root{--ink:#103e35;--green:#087b58;--mint:#dff4dd;--peach:#ffe8dc;--pink:#ffb5b3;--yellow:#ffd052;--sky:#dcf3f7;--cream:#fffaf2;--white:#fff;--line:#e9e4d8}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--cream);font:16px/1.45 system-ui,-apple-system,Segoe UI,sans-serif}button,input{font:inherit}button,a{ -webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}.wrap{max-width:1120px;margin:auto;padding:0 20px}.top{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:16px 0}.logo{display:flex;align-items:center;gap:8px}.paw{font-size:39px;line-height:1}.logo small{display:block;font-size:12px;font-weight:800}.logo strong{font-size:31px;line-height:.9;letter-spacing:-1.5px}.links{display:none;gap:27px;align-items:center;font-size:13px;font-weight:800}.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;min-height:50px;padding:13px 21px;border-radius:14px;background:var(--ink);color:#fff;font-weight:850;border:0;cursor:pointer;box-shadow:0 5px 0 #0c40331b}.btn:hover{transform:translateY(-1px)}.btn.light{background:var(--mint);color:var(--ink);box-shadow:none}.btn.yellow{background:var(--yellow);color:var(--ink)}.hero{display:grid;gap:20px;align-items:center;padding:36px 0 42px}.hero h1{font-size:clamp(46px,9vw,79px);line-height:.99;letter-spacing:-.065em;margin:0 0 20px;font-weight:950}.underline{position:relative;white-space:nowrap}.underline:after{content:"";position:absolute;bottom:-6px;left:2%;width:96%;height:7px;background:var(--yellow);border-radius:70% 40% 60% 30%;transform:rotate(-2deg)}.hero p{font-size:19px;font-weight:650;max-width:510px;margin:0 0 24px}.heroactions{display:flex;flex-wrap:wrap;gap:10px}.benefits{display:flex;flex-wrap:wrap;gap:14px 22px;margin-top:23px;font-size:12px;font-weight:800}.benefits span{display:flex;align-items:center;gap:7px}.benefits i{font-size:23px;font-style:normal}.photo{min-height:360px;border-radius:44% 56% 45% 55%/35% 30% 70% 65%;background:linear-gradient(145deg,#8bc9aa,#ddf0b5 45%,#f5b976);position:relative;display:grid;place-items:center;overflow:hidden}.photo:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 25% 65%,#f2e8b0 0 13%,transparent 14%),radial-gradient(circle at 80% 80%,#8ac090 0 23%,transparent 24%)}.bigdog{font-size:clamp(155px,29vw,280px);filter:drop-shadow(0 14px 5px #315e3840);z-index:1}.bubble{position:absolute;z-index:2;background:#ffc2bd;color:#173f36;border-radius:54% 46% 52% 48%;padding:16px 18px;font-weight:950;font-size:19px;line-height:1.15;text-align:center;transform:rotate(-8deg);top:4%;left:0;box-shadow:0 4px 0 #e99e9b33}.spark{position:absolute;font-size:34px;color:var(--yellow);font-weight:900;right:10%;top:8%}.section{padding:42px 0}.section h2{font-size:clamp(32px,6vw,48px);letter-spacing:-.055em;line-height:1.08;margin:0 0 24px}.problem{background:linear-gradient(110deg,#ffeddf,#fff4e9);border-radius:35px;padding:30px 20px}.grid3{display:grid;gap:15px}.problemitem{display:flex;gap:12px;align-items:flex-start}.circle{width:55px;height:55px;border-radius:50%;display:grid;place-items:center;flex-shrink:0;font-size:27px}.coral{background:#ffb6b1}.lime{background:#b8eac7}.gold{background:#ffd45f}.problemitem p{margin:5px 0;font-size:15px}.sectionhead{margin-bottom:28px}.steps{display:grid;gap:20px}.step{background:white;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 10px 25px #163d3010}.stepicon{font-size:40px;display:block;margin:12px 0}.stepnum{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--pink);font-size:22px;font-weight:950}.step:nth-child(2) .stepnum{background:#69d39e}.step:nth-child(3) .stepnum{background:var(--yellow)}.step h3{font-size:20px;margin:0 0 8px}.step p{margin:0;color:#385c53;font-size:14px}.preview{background:#e7f5f0;border-radius:25px;padding:24px;margin-top:26px;display:grid;gap:15px}.preview h3{font-size:24px;margin:0 0 6px}.preview p{margin:0;font-size:14px}.phone{max-width:320px;width:100%;margin:auto;border:7px solid #193f36;border-radius:32px;background:#fff;padding:20px 14px;box-shadow:10px 15px 0 #1e513520;transform:rotate(2deg)}.phone h4{margin:0 0 12px}.phoneweek{display:grid;grid-template-columns:repeat(5,1fr);gap:5px}.phoneweek span{background:#f2f5f1;border-radius:7px;padding:7px 2px;text-align:center;font-size:10px}.phoneweek span:nth-child(3){background:#32b87e;color:white}.dogline{display:flex;align-items:center;gap:10px;background:#f9f7f3;border-radius:12px;margin-top:10px;padding:9px;font-size:13px}.dogline b{display:block}.dogline small{font-size:11px;color:#577369}.chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px}.chips span{font-size:11px;background:#c7efd6;padding:3px 6px;border-radius:6px}.chips span:nth-child(2){background:#ffe5a0}.chips span:nth-child(3){background:#ffd4df}.price{background:linear-gradient(115deg,#e5f3d9,#f4f7e4);border-radius:30px;padding:28px;display:grid;gap:20px}.price strong{font-size:48px;letter-spacing:-.06em}.price small{font-size:16px;letter-spacing:0}.price ul{padding:0;list-style:none;margin:0;display:grid;gap:10px}.price li:before{content:'✓';background:#20a66f;color:#fff;border-radius:6px;padding:0 5px;margin-right:10px}.fine{font-size:12px;color:#426359}.wait{background:linear-gradient(110deg,#d9f3f7,#e8f8f0);border-radius:30px;padding:30px 20px;position:relative;overflow:hidden}.wait:after{content:'🐕';position:absolute;font-size:115px;opacity:.16;right:-15px;bottom:-35px;pointer-events:none}.wait h2{margin:0 0 8px}.wait p{margin:0 0 19px}.form{display:grid;gap:10px;position:relative;z-index:1}.form input{width:100%;border:0;background:white;border-radius:12px;padding:15px;min-height:50px;outline-color:#0b8c68}.thanks{display:none;background:#fff;border-radius:14px;padding:18px;font-weight:850;position:relative;z-index:2}.footer{background:#103e35;color:white;margin-top:36px;padding:29px 0}.footrow{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}.footrow a{text-decoration:underline;text-underline-offset:4px}.footrow small{color:#d1e6dd}.demo{display:none;position:fixed;inset:0;background:#0c302ac9;z-index:10;overflow:auto;padding:16px}.demo.open{display:block}.demobox{max-width:720px;background:#fffaf2;margin:20px auto;border-radius:22px;padding:20px}.demotop{display:flex;justify-content:space-between;align-items:center;gap:10px}.close{border:0;background:#e2f3e8;border-radius:9px;padding:9px 13px;cursor:pointer}.tabs{display:flex;gap:7px;margin:16px 0}.tabs button{flex:1;border:0;border-radius:10px;padding:11px 4px;background:#e6eee7;font-weight:800}.tabs .active{background:#0b805b;color:white}.demopanel{background:white;border:1px solid #e5e9df;border-radius:15px;padding:15px}.demogrid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}.demoday{border:1px solid #d7e3d9;border-radius:8px;padding:7px 2px;background:white;font-size:11px;cursor:pointer}.demoday.selected{background:#d6f3df;border-color:#0b805b}.demoday b,.demoday small{display:block}.demoday small{font-size:9px}.formfield{width:100%;padding:12px;border:1px solid #d1ded3;border-radius:9px;background:white;margin:6px 0 10px}.demoitem{padding:12px;border:1px solid #e5e9df;border-radius:11px;margin:9px 0}.demoitem header{display:flex;justify-content:space-between;align-items:center;gap:8px}.vax{display:inline-block;border-radius:6px;padding:4px 6px;font-size:11px;font-weight:800}.vax.ok{background:#d8f2df}.vax.amber{background:#fff0b9}.vax.red{background:#ffd8d5}.notebuttons{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-top:10px}.notebuttons button{border:1px solid #dce5dc;border-radius:8px;background:white;padding:9px 2px;font-size:12px}.notebuttons button.on{background:#bcebd0;border-color:#19895d}.demomsg{padding:10px;background:#fff0c2;border-radius:9px;margin-top:10px;font-size:13px}.hint{font-size:12px;color:#577369}@media(min-width:720px){.links{display:flex}.hero{grid-template-columns:1fr 1fr;padding:52px 0 65px;gap:45px}.photo{min-height:470px}.grid3,.steps{grid-template-columns:repeat(3,1fr)}.problem{padding:38px}.preview{grid-template-columns:1fr 1fr;align-items:center;padding:30px 50px}.price{grid-template-columns:1fr 1fr;padding:35px 50px}.wait{padding:42px}.form{grid-template-columns:1fr 1fr auto}.section{padding:58px 0}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Readability and touch-accessibility improvements */
+html{scroll-padding-top:18px}
+body{overflow-wrap:break-word}
+button,a,input,select{touch-action:manipulation}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #ad4d81;outline-offset:3px}
+.mobile-demo{padding:10px 13px;min-height:44px;font-size:13px;white-space:nowrap}
+.hero h1{overflow-wrap:normal}
+.hero .underline{white-space:normal;display:inline}
+.hero .underline:after{bottom:-7px}
+.heroactions .btn{min-width:0;text-align:center}
+.photo{isolation:isolate}
+.bubble{max-width:54%;font-size:clamp(14px,4vw,19px)}
+.problemitem p,.step p,.preview p,.price p,.wait p{line-height:1.55}
+.problemitem,.step,.price,.wait,.preview{min-width:0}
+.step p{color:#24483f}
+.fine,.hint{color:#365b51}
+.phone{transform:none}
+.phoneweek span{font-size:11px}
+.dogline small{color:#365b51}
+.chips span{color:#123e33}
+.demo{padding:12px;overscroll-behavior:contain}
+.demobox{width:100%;max-width:720px;margin:10px auto;padding:16px}
+.demotop{align-items:flex-start}
+.demotop>div{min-width:0}
+.tabs button{min-width:0;font-size:12px;overflow-wrap:anywhere}
+.demopanel{min-width:0}
+.demogrid{gap:3px}
+.demoday{min-width:0;min-height:52px;overflow-wrap:anywhere}
+.demoday b{font-size:10px}
+.demoday small{font-size:9px}
+.demoitem header{flex-wrap:wrap}
+.demoitem header .close{min-height:40px}
+.notebuttons button{min-height:52px;line-height:1.25}
+.vax{line-height:1.4}
+.formfield{max-width:100%;min-height:46px}
+.footer a{min-height:28px;display:inline-flex;align-items:center}
+@media(max-width:719px){
+ .wrap{padding-left:16px;padding-right:16px}
+ .top{gap:8px}
+ .logo{min-width:0}
+ .logo strong{font-size:clamp(22px,7vw,29px);letter-spacing:-1px}
+ .paw{font-size:32px}
+ .hero{padding-top:22px}
+ .hero h1{font-size:clamp(35px,10.4vw,54px);line-height:1.08;letter-spacing:-.055em}
+ .hero p{font-size:17px}
+ .heroactions{display:grid;grid-template-columns:1fr 1fr}
+ .heroactions .btn{font-size:13px;padding:13px 9px;line-height:1.3}
+ .photo{min-height:300px}
+ .bigdog{font-size:160px}
+ .section{padding:32px 0}
+ .section h2{font-size:clamp(29px,8vw,38px)}
+ .price{padding:22px}
+ .price strong{font-size:42px}
+ .wait{padding:24px 18px}
+ .form .btn{width:100%}
+}
+@media(max-width:360px){
+ .top{flex-wrap:wrap}
+ .mobile-demo{margin-left:auto}
+ .heroactions{grid-template-columns:1fr}
+ .heroactions .btn{font-size:15px}
+ .demobox{padding:11px}
+ .demopanel{padding:10px}
+ .notebuttons{gap:3px}
+ .notebuttons button{font-size:10px;padding:7px 1px}
+}
+@media(min-width:720px){.mobile-demo{display:none}.phone{transform:rotate(2deg)}}
+
+/* High contrast text throughout the interactive demo */
+.demo{color:#142b25}
+.demobox,.demopanel,.demoitem{color:#142b25;background:#fff}
+.demotop strong,.demopanel h3,.demoitem b{color:#102b23}
+.demo .hint,.demo small,.demo label{color:#344b42;font-size:13px}
+.demo .tabs button{background:#e5ebe7;color:#16392d;border:2px solid #b8c9bd;font-weight:850}
+.demo .tabs button.active{background:#174d3b;color:#fff;border-color:#174d3b}
+.demo .close{background:#dcebe2;color:#14392b;font-weight:850;border:1px solid #a5c2af}
+.demo .close:disabled{background:#f8d9d7;color:#842a26;opacity:1;border-color:#dca8a4}
+.demo .demoday{background:#fff;color:#18372d;border:1px solid #8cae9a;font-weight:800}
+.demo .demoday.selected{background:#d2f1df;color:#123e2c;border:2px solid #126943}
+.demo .demoday small{color:#294e3b;font-size:11px;font-weight:750}
+.demo .formfield{color:#122e25;background:#fff;border:2px solid #8eac9b;font-size:16px}
+.demo .formfield option{color:#122e25;background:#fff}
+.demo .vax.ok{background:#d5efdf;color:#125135}
+.demo .vax.amber{background:#ffeb9d;color:#5d3c00}
+.demo .vax.red{background:#ffd3d0;color:#8d1d1b}
+.demo .notebuttons button{background:#fff;color:#17382c;border:2px solid #9db9a7;font-weight:850;font-size:13px}
+.demo .notebuttons button.on{background:#c6efda;color:#12482e;border-color:#24754b}
+.demo .demomsg{background:#fff0bc;color:#533a00;font-weight:750}
+.demo .btn{background:#153f30;color:#fff;font-weight:900}
+.demo button:focus-visible,.demo select:focus-visible,.demo input:focus-visible{outline:3px solid #9b3b6c;outline-offset:3px}
+@media(max-width:390px){.demo .tabs button{font-size:12px;padding:12px 2px}.demo .notebuttons button{font-size:11px}.demo .demoday small{font-size:10px}}
+
+/* Standalone demo layout */
+body{min-height:100vh;background:linear-gradient(145deg,#fff2e5,#e4f6f2);color:#142b25}
+.demo,.demo.open{display:block;position:static;inset:auto;background:transparent;overflow:visible;padding:18px 12px;min-height:100vh}
+.demobox{width:min(100%,850px);max-width:850px;margin:0 auto;background:#fffaf2;box-shadow:0 12px 35px #193e301c}
+.demotop{flex-wrap:wrap}
+.back-link{display:inline-flex;align-items:center;text-decoration:none;min-height:44px;background:#153f30!important;color:#fff!important;padding:10px 14px}
+.demo .hint{color:#344b42}
+.demo .tabs button{min-height:48px}
+.demo .demopanel{background:#fff;color:#142b25}
+.demo .demoday{min-height:54px}
+.demo .notebuttons button{min-height:54px}
+@media(max-width:390px){.demo{padding:10px 7px}.demobox{padding:12px}.demo .tabs button{font-size:12px}}
+</style></head><body>
+<main id="demo" class="demo open" aria-label="PackPal interactive demo"><div class="demobox"><div class="demotop"><div><strong style="font-size:23px">🐾 PackPal demo</strong><div class="hint">Fictional sample data · Saved in this browser</div></div><a href="index.html" class="close back-link">← Back to website</a></div><div class="tabs"><button data-tab="bookings" class="active">📅 Bookings</button><button data-tab="today">🐕 Today</button><button data-tab="pupdate">💌 Pupdate</button></div><div id="demoContent"></div></div></main>
+<script>
+(()=>{'use strict';const KEY='locaPackPalAlpha1';const iso=()=>{const d=new Date();return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')};const add=(date,n)=>{let d=new Date(date+'T12:00:00');d.setDate(d.getDate()+n);return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')};const format=d=>new Date(d+'T12:00:00').toLocaleDateString('en-IE',{weekday:'short',day:'numeric',month:'short'});const sample=[['Biscuit','Aoife',90,[0,1,3]],['Luna','Cian',8,[0,2]],['Milo','Niamh',-4,[0,4]],['Poppy','Eoin',12,[1,2]],['Teddy','Sara',180,[0,5]],['Daisy','Jack',2,[2,3]],['Ollie','Maya',75,[3,4]],['Ruby','Finn',0,[0,6]],['Archie','Leah',35,[1,5]],['Maple','Conor',120,[2,6]]];let state;try{state=JSON.parse(localStorage.getItem(KEY))}catch{}if(!state||!Array.isArray(state.dogs))state={dogs:sample.map((d,i)=>({id:'d'+i,name:d[0],owner:d[1],vax:add(iso(),d[2]),days:d[3].map(n=>add(iso(),n)),notes:{}})),date:iso(),owner:'d0',checked:[]};state.dogs.forEach(d=>d.notes=d.notes||{});state.checked=state.checked||[];let tab='bookings';const root=document.getElementById('demo'),out=document.getElementById('demoContent');const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch{}};const dog=id=>state.dogs.find(d=>d.id===id),booked=date=>state.dogs.filter(d=>d.days.includes(date)),room=date=>Math.max(0,40-booked(date).length);const vax=d=>{const days=Math.floor((new Date(d.vax+'T12:00:00')-new Date(iso()+'T12:00:00'))/86400000);return days<0?['red','Expired',true]:days<=14?['amber',days===0?'Expires today':`Due in ${days} days`,false]:['ok','In date',false]};const notes=[['ate','🍽️','Ate'],['walked','🦮','Walked'],['played','🎾','Played'],['napped','💤','Napped']];const safe=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));function render(){root.querySelectorAll('[data-tab]').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));if(tab==='bookings')renderBookings();else if(tab==='today')renderToday();else renderPupdate()}function renderBookings(){const day=state.date,weekday=(new Date(day+'T12:00:00').getDay()+6)%7,mon=add(day,-weekday),dates=Array.from({length:7},(_,i)=>add(mon,i));out.innerHTML=`<div class="demopanel"><h3>Bookings · 40 places per day</h3><p class="hint">Select a day and a dog. Expired vaccinations block bookings.</p><div class="demogrid">${dates.map(d=>`<button class="demoday ${d===day?'selected':''}" data-date="${d}"><b>${format(d).split(' ')[0]}</b><small>${room(d)} left</small></button>`).join('')}</div><p><b>${booked(day).length} booked · ${room(day)} places left</b></p><label>Dog<select id="bookingDog" class="formfield"><option value="">Choose a dog</option>${state.dogs.map(d=>`<option value="${d.id}">${safe(d.name)}</option>`).join('')}</select></label><label>Date<input type="date" id="bookingDate" class="formfield" value="${day}"></label><button id="addBooking" class="btn">＋ Add booking</button><div id="bookingResult" role="status"></div><h3>Booked dogs</h3>${booked(day).map(d=>`<div class="demoitem"><b>${safe(d.name)}</b> · ${safe(d.owner)} <span class="vax ${vax(d)[0]}">${vax(d)[1]}</span></div>`).join('')||'<p class="hint">No bookings for this day.</p>'}</div>`;out.querySelectorAll('[data-date]').forEach(b=>b.onclick=()=>{state.date=b.dataset.date;save();render()});document.getElementById('bookingDate').onchange=e=>{if(e.target.value){state.date=e.target.value;save();render()}};document.getElementById('addBooking').onclick=()=>{const d=dog(document.getElementById('bookingDog').value),date=document.getElementById('bookingDate').value,msg=document.getElementById('bookingResult');let text;if(!d||!date)text='Choose a dog and date.';else if(vax(d)[2])text=`Booking blocked: ${d.name} has an expired vaccination.`;else if(d.days.includes(date))text=`${d.name} is already booked.`;else if(room(date)===0){let next;for(let i=1;i<=14;i++)if(room(add(date,i))>0){next=add(date,i);break}text=next?`Full day. Nearest day with room: ${format(next)}.`:'No available day in the next 14 days.'}else{d.days.push(date);state.date=date;save();render();return}msg.innerHTML='<div class="demomsg">'+safe(text)+'</div>'}}function renderToday(){const date=iso(),dogs=booked(date);out.innerHTML=`<div class="demopanel"><h3>Today · ${format(date)}</h3><p class="hint">Red = expired (check-in blocked). Amber = expires within 14 days. Tap a note once to save.</p>${dogs.map(d=>{const v=vax(d),k=date+':'+d.id,checked=state.checked.includes(k),added=d.notes[date]||[];return `<div class="demoitem"><header><div><b>🐶 ${safe(d.name)}</b><div class="hint">${safe(d.owner)}</div></div><button data-check="${d.id}" class="close" ${v[2]?'disabled':''}>${v[2]?'Blocked':checked?'✓ Checked in':'Check in'}</button></header><p><span class="vax ${v[0]}">💉 ${v[1]}</span></p><div class="notebuttons">${notes.map(([k,e,label])=>`<button data-dog="${d.id}" data-note="${k}" class="${added.includes(k)?'on':''}">${e}<br>${label}</button>`).join('')}</div></div>`}).join('')}</div>`;out.querySelectorAll('[data-check]').forEach(b=>b.onclick=()=>{const d=dog(b.dataset.check),k=date+':'+d.id;if(vax(d)[2])return;state.checked=state.checked.includes(k)?state.checked.filter(x=>x!==k):[...state.checked,k];save();render()});out.querySelectorAll('[data-note]').forEach(b=>b.onclick=()=>{const d=dog(b.dataset.dog),k=b.dataset.note;d.notes[date]=d.notes[date]||[];d.notes[date]=d.notes[date].includes(k)?d.notes[date].filter(x=>x!==k):[...d.notes[date],k];save();render()})}function renderPupdate(){const d=dog(state.owner)||state.dogs[0],added=d.notes[iso()]||[];out.innerHTML=`<div class="demopanel"><h3>💌 Pupdate</h3><p class="hint">Staff preview: select one fictional owner. Real owner authentication is planned.</p><label>Preview dog<select id="ownerSelect" class="formfield">${state.dogs.map(x=>`<option value="${x.id}" ${x.id===d.id?'selected':''}>${safe(x.name)} · ${safe(x.owner)}</option>`).join('')}</select></label><h3>🐶 ${safe(d.name)}'s day</h3><p class="hint">${safe(d.owner)} · ${format(iso())}</p>${added.length?added.map(k=>{const n=notes.find(x=>x[0]===k);return `<div class="demoitem">${n[1]} <b>${n[2]}</b> · Today</div>`}).join(''):'<div class="demomsg">No updates yet. Staff can add notes in Today.</div>'}<p class="hint">Only this dog's notes are shown in this view.</p></div>`;document.getElementById('ownerSelect').onchange=e=>{state.owner=e.target.value;save();render()}}root.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{tab=b.dataset.tab;render()});render()})();
+</script></body></html>
